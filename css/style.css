@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caprasimo&family=Dancing+Script&family=Edu+SA+Beginner:wght@600;700&family=Fira+Sans&family=Josefin+Sans:ital,wght@1,700&family=Poiret+One&family=Poppins:wght@200;400&family=Preahvihear&family=Ubuntu:wght@500;700&family=Ysabeau+Office:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/img/back-image.png');
+    background-position: center;
+    background-size: cover;
+    padding: 10px 140px;
+    position: relative;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform:uppercase;
+}
+#navbar #logo{
+    width: 140px;
+    padding-top: 10px;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    margin-right: -140px;
+
+}
+#navbar ul li{
+    padding-top: 10px;
+    padding-right: 47px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+    font-weight: 500;
+    font-size: 15px;
+}
+#navbar ul li a:hover{
+    color: red;
+}
+.btns button{
+   text-align: center;
+   justify-content: center;
+ 
+}
+.btns button a{
+    text-decoration: none;
+
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius:30px;
+    border-top-right-radius: 0px;
+    background: linear-gradient(to bottom left, #cc00cc 0%, #ff6666 100%);
+    border: none;
+    outline: none;
+    color: white;  
+    transition: 0.5s;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.btns .login{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    margin-right: 10px;
+    color: blue;
+}
+.containt{
+    max-width: 500px;
+}
+.containt .btn{
+    animation-delay: 1s;
+}
+.containt h1{
+    margin-top: 105px;
+    font-size: 50px;
+    line-height: 65px;
+}
+.containt p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 21px;
+    font-size: 14px;
+    color: rgb(131, 131, 131);
+    animation-delay: 0.5s;
+}
+.image{
+    width: 425px;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    padding: 10px 10px;
+}
+.image.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform:translateY(30px);
+    animation: moveUp 0.5s linear forwards;
+}
+@keyframes moveUp{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
